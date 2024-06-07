@@ -13,7 +13,8 @@ public static int findFib(int n) {
 	fib[1]=1;
 	for(int i=2;i<n;i++)
 	fib[i]=fib[i-2]+fib[i-1];
-
+        for(int i=0;i<n;i++)
+	 System.out.print(fib[i]+" ");
    return fib[n-1];
 	
 }

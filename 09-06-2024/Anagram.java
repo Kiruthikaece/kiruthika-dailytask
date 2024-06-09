@@ -13,6 +13,8 @@ class Anagram {
         isAnagram3(s1, s2);
     }
 
+
+// soln-1
     public static void isAnagram1(String s1, String s2) {
         boolean isAnagram = true;
         char[] ch1 = s1.toLowerCase().toCharArray();
@@ -32,6 +34,7 @@ class Anagram {
             System.out.println("Two Strings are not anagram");
     }
 
+// soln-2
     public static void isAnagram2(String str1, String str2) {
         boolean areAnagram = true;
         str1 = str1.toLowerCase();
@@ -62,6 +65,8 @@ class Anagram {
             System.out.println("Two strings are not anagram");
     }
 
+
+//soln-3
     public static void isAnagram3(String str1, String str2) {
         boolean isAnagram = true;
         str1 = str1.toLowerCase();

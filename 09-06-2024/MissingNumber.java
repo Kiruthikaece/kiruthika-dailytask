@@ -19,6 +19,7 @@ int res3=findMissingElement3(arr);
 System.out.println("missing Element:"+res3);
 }
 
+// solution-1
 public static int findMissingElement1(int[] arr) {
          int no=arr.length;
          int sum=no*(no+1)/2;                
@@ -29,6 +30,7 @@ public static int findMissingElement1(int[] arr) {
          return sum-s1;
 }
 
+// solution-2
 public static int findMissingElement2(int[] arr) {
 
 int no=arr.length;
@@ -47,6 +49,7 @@ return -1;
 
 }
 
+// solution-3
 public static int findMissingElement3(int[] arr) {
 int no=arr.length;
 int k=1;      

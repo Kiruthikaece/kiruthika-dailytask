@@ -13,39 +13,8 @@ public class SearchArr {
         int target=sc.nextInt();
         int res1=rotataionArr1(arr,target);
         System.out.println("target index:"+res1);
-        int res2=rotataionArr2(arr,target);
-        System.out.println("target index:"+res2);
-        // int res3=rotataionArr3(arr,target);
-        // System.out.println("target index:"+res3);
+      
     }
-
-    //soln-2
-    private static int rotataionArr2(int[] arr, int target) {
-        int low=0,high=arr.length-1;
-        while(low<=high) {
-            int mid=(low+high)/2;
-
-            if(arr[mid]==target)
-                return mid;
-
-                if(arr[low]<=arr[mid])
-                {
-                    if(arr[low]<=target && target<arr[mid])
-                    high=mid-1;
-                    else
-                    low=mid+1;
-                }
-                else {
-                    if(arr[mid]<target && target<=arr[high])
-                    low=mid+1;
-                    else
-                    high=mid-1;
-                }
-        }
-
-        return -1;
-    }
-
     //soln-1
     public static int rotataionArr1(int[] arr,int target) {
         if(arr[0]==target)

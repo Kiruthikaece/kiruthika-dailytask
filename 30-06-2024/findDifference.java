@@ -36,7 +36,7 @@ public class findDifference {
                 }
             
             
-            return '\0';
+            return ' ';
         }
     
     //soln-2
@@ -73,6 +73,6 @@ public class findDifference {
             return c;
         }
         
-        return '\0';
+        return ' ';
     }
 }

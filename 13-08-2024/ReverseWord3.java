@@ -10,7 +10,7 @@ public class ReverseWord3 {
         System.out.println("Reverse Word to given string:"+res1);
 
         String res2=reverseWord2(str);
-        System.out.println("Reverse Word:"+res2);
+        System.out.println("Reverse Word to given string:"+res2);
 
         String res3=reverseWord3(str);
         System.out.println("Reverse Word:"+res3);
